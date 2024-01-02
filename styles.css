@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+}
+
+.drum-machine {
+  margin-top: 120px;
+}
+
+/* Style for the first row of buttons (light blue with bold numbers) */
+.drum-pad-row1,
+/* Style for the second row of buttons (light green with bold numbers) */
+.drum-pad-row2,
+/* Style for the third row of buttons (light coral with bold numbers) */
+.drum-pad-row3,
+.drum-pad-row4 {
+  background-color: rgba(174, 183, 187, 0.982);
+  font-weight: bold;
+  display:flexbox;
+  gap: 10px;
+}
+
+.drum-pad {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease, background-color 0.1s ease, border 0.1s ease, box-shadow 0.1s ease;
+}
+
+.drum-pad:active,
+.drum-pad:focus {
+  transform: scale(0.95);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.drum-pad-transition-end {
+  transition: none;
+}
+
+.drum-pad-pressed {
+  transform: scale(0.95);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.drum-pad:active,
+.drum-pad:focus,
+.drum-pad-pressed {
+  transform: scale(0.95);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.drum-pad:not(:active):not(:focus):not(.drum-pad-pressed) {
+  transform: scale(1);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.effect-slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}

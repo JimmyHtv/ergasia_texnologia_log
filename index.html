@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drum Machine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="drum-machine">
+    <div class="drum-category">
+      <b><p>Kick</p></b>
+      <button class="drum-pad drum-pad-row1" data-sound="kick-1">1</button>
+      <button class="drum-pad drum-pad-row1" data-sound="kick-2">2</button>
+      <button class="drum-pad drum-pad-row1" data-sound="kick-3">3</button>
+      <button class="drum-pad drum-pad-row1" data-sound="kick-4">4</button>
+      <button class="drum-pad drum-pad-row1" data-sound="kick-5">5</button>
+      <button class="drum-pad drum-pad-row1" data-sound="kick-6">6</button>
+      <button class="drum-pad drum-pad-row1" data-sound="kick-7">7</button>
+      <button class="drum-pad drum-pad-row1" data-sound="kick-8">8</button>
+      <button class="drum-pad drum-pad-row1" data-sound="kick-9">9</button>
+      <button class="drum-pad drum-pad-row1" data-sound="kick-10">0</button>
+    </div>
+
+    <div class="drum-category">
+      <b><p>Snare</p></b>
+      <button class="drum-pad drum-pad-row2" data-sound="snare-1">Q</button>
+      <button class="drum-pad drum-pad-row2" data-sound="snare-2">W</button>
+      <button class="drum-pad drum-pad-row2" data-sound="snare-3">E</button>
+      <button class="drum-pad drum-pad-row2" data-sound="snare-4">R</button>
+      <button class="drum-pad drum-pad-row2" data-sound="snare-5">T</button>
+      <button class="drum-pad drum-pad-row2" data-sound="snare-6">Y</button>
+      <button class="drum-pad drum-pad-row2" data-sound="snare-7">U</button>
+      <button class="drum-pad drum-pad-row2" data-sound="snare-8">I</button>
+      <button class="drum-pad drum-pad-row2" data-sound="snare-9">O</button>
+      <button class="drum-pad drum-pad-row2" data-sound="snare-10">P</button>
+      
+    </div>
+
+
+    <div class="drum-category">
+      <b><p>Hi-Hat</p></b>
+      <button class="drum-pad drum-pad-row3" data-sound="hihat-1">A</button>
+      <button class="drum-pad drum-pad-row3" data-sound="hihat-2">S</button>
+      <button class="drum-pad drum-pad-row3" data-sound="hihat-3">D</button>
+      <button class="drum-pad drum-pad-row3" data-sound="hihat-4">F</button>
+      <button class="drum-pad drum-pad-row3" data-sound="hihat-5">G</button>
+      <button class="drum-pad drum-pad-row3" data-sound="hihat-6">H</button>
+      <button class="drum-pad drum-pad-row3" data-sound="hihat-7">J</button>
+      <button class="drum-pad drum-pad-row3" data-sound="hihat-8">K</button>
+      <button class="drum-pad drum-pad-row3" data-sound="hihat-9">L</button>
+      <button class="drum-pad drum-pad-row3" data-sound="hihat-10">;</button>
+      
+    </div>
+
+
+    <div class="drum-category">
+      <b><p>Tom</p></b>
+      <button class="drum-pad drum-pad-row4" data-sound="Tom-1">Z</button>
+      <button class="drum-pad drum-pad-row4" data-sound="Tom-2">X</button>
+      <button class="drum-pad drum-pad-row4" data-sound="Tom-3">C</button>
+      <button class="drum-pad drum-pad-row4" data-sound="Tom-4">V</button>
+      <button class="drum-pad drum-pad-row4" data-sound="Tom-5">B</button>
+      <button class="drum-pad drum-pad-row4" data-sound="Tom-6">N</button>
+      <button class="drum-pad drum-pad-row4" data-sound="Tom-7">M</button>
+      <button class="drum-pad drum-pad-row4" data-sound="Tom-8">,</button>
+      <button class="drum-pad drum-pad-row4" data-sound="Tom-9">.</button>
+    
+      
+    </div>
+    
+
+    <!--VOLUME SLIDER-->
+    <div class="volume-control">
+      <label for="volumeSlider">Volume:</label>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+
+  
+</body>
+</html>
